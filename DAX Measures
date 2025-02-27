@@ -1,0 +1,42 @@
+
+DAX
+```
+Annual_Average_Private_Debt = 
+AVERAGE(private_debt[annual_average_debt])
+
+Average Central Govt Debt = 
+CALCULATE(AVERAGE(central_government_debt[annual_average_debt]))
+
+Debt Change % = 
+    VAR PrevDebt = [Previous Year Debt]  
+    VAR CurrDebt = AVERAGE(global_debt[annual_average_debt])  
+
+    RETURN 
+       IF(
+           NOT ISBLANK(PrevDebt),
+           DIVIDE(CurrDebt - PrevDebt, PrevDebt, 0) * 100
+        )
+Debt Change Color = 
+IF(
+    [Debt Change %] >= 0, 
+    " Dark Green",  // Positive Change
+    "Dark Red"     // Negative Change
+)
+
+Previous Year Debt = 
+VAR CurrentYear = SELECTEDVALUE(global_debt[Year])
+VAR PrevDebt = 
+    CALCULATE(
+        AVERAGE(global_debt[annual_average_debt]), 
+        FILTER(ALL(global_debt), global_debt[Year] = CurrentYear - 1)
+    )
+RETURN 
+    IF(ISBLANK(PrevDebt), 0, PrevDebt)
+
+Total Countries = 
+DISTINCTCOUNT(global_debt[country_name])
+
+Total Global Debt % = 
+SUM(global_debt[annual_average_debt])
+
+```
