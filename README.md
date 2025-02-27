@@ -23,6 +23,8 @@ This dataset allows for an in-depth examination of **global debt trends**, relat
 
 ## Data Cleaning & Transformation
 
+![Clean_data](https://github.com/OlanikeCJ/Global_Debt_Analysis/blob/main/Images_global_debt/clean_data.png?raw=true)
+
 To prepare the dataset for analysis, I performed the following steps:
 
 1. **Pre-Merging Processing:**
