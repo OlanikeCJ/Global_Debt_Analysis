@@ -1,6 +1,8 @@
 
 # **Global Debt Analysis (1950 - 2022)**
 
+![Dashboard](https://github.com/OlanikeCJ/Global_Debt_Analysis/blob/main/Images_global_debt/global_debt_dashboard.png?raw=true)
+
 ## **Project Description**
 
 The **Global Debt Database (GDD)** is an extensive dataset compiled from various sources to provide insights into the total gross debt of the **nonfinancial sector** (both private and public) across **190 countries**, covering advanced economies, emerging markets, and low-income countries.
