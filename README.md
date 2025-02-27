@@ -25,13 +25,13 @@ To prepare the dataset for analysis, I performed the following steps:
 
 1. **Pre-Merging Processing:**
 
-   - **Unpivoted columns** to structure the data properly.
+   - Unpivoted columns to structure the data properly.
 
-   - **Changed data types** for consistency.
+   - Changed data types for consistency.
 
-   - **Rounded off debt figures** (I used Decimal data type instead of Fixed, which might have impacted precision slightly).
+   - Rounded off debt figures (I used Decimal data type instead of Fixed, which might have impacted precision slightly).
 
-   - **Extracted the Year column** from the Date column.
+   - Extracted the Year column from the Date column.
 
 
 2. **Merged Queries:** I combined all five datasets into one **(global\_debt dataset)** using the **Merge Queries as New** feature in Power Query.
@@ -39,9 +39,9 @@ To prepare the dataset for analysis, I performed the following steps:
 
 3. **Post-Merging Processing:**
 
-   - **Added a Conditional Column** to categorize debt types.
+   - Added a Conditional Column to categorize debt types.
 
-   - **Loaded the cleaned dataset** into the Power BI model.
+   - Loaded the cleaned dataset into the Power BI model.
 
 4. **Created a Calendar Table** using DAX with a **Year column** and established a **One-to-Many Relationship** with the Year column in the global debt dataset.
 
