@@ -45,6 +45,7 @@ To prepare the dataset for analysis, I performed the following steps:
 
 4. **Created a Calendar Table** using DAX with a **Year column** and established a **One-to-Many Relationship** with the Year column in the global debt dataset.
 
+5. **Calculations:** Follow [DAX](https://github.com/OlanikeCJ/Global_Debt_Analysis/commit/6263a3b3a4826e79c392809097271b551e9891b7) to view calculations used in this dataset.
 
 ## **Insights & Visualizations**
 
